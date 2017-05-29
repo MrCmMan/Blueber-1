@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/com_facebook_button_icon_blue"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginLeft="58dp" android:layout_marginStart="58dp"
+            android:layout_marginTop="104dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followng"
+            android:layout_alignBottom="@+id/followrs"
+            android:layout_alignLeft="@+id/following" android:layout_alignStart="@+id/following"
+            android:layout_alignTop="@+id/followrs" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:textSize="20sp" android:textAlignment="center"/>
+    <TextView
+            android:text="Following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/following" android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/followers" android:layout_alignBottom="@+id/followers"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:textAlignment="center"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lstname"
+            android:textSize="20sp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp" android:layout_below="@+id/frsname"
+            android:layout_alignLeft="@+id/followrs" android:layout_alignStart="@+id/followrs"
+            android:textStyle="normal|bold"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frsname"
+
+            android:textColor="@color/colorAccent" android:textSize="20sp"
+            android:layout_marginTop="28dp" android:layout_alignParentTop="true" android:layout_alignLeft="@+id/lstname"
+            android:layout_alignStart="@+id/lstname" android:textStyle="normal|bold" android:textAlignment="center"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followrs"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/imageView2" android:layout_alignLeft="@+id/followers"
+            android:layout_alignStart="@+id/followers" android:layout_alignRight="@+id/followers"
+            android:layout_alignEnd="@+id/followers" android:textAlignment="center"/>
+    <TextView
+            android:text="Followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/followers" android:fontFamily="sans-serif"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_below="@+id/followrs" android:layout_toLeftOf="@+id/following"
+            android:layout_toStartOf="@+id/following" android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp" android:textAlignment="center"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFol"
+            android:background="@drawable/btn"
+            android:layout_below="@+id/following" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_marginRight="40dp"/>
+</RelativeLayout>
